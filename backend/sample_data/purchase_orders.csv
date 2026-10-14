@@ -1,0 +1,25 @@
+po_id,supplier_id,category,item,quantity,unit_price,total_amount,currency,requested_date,needed_by,requester,requester_role,department,status,priority
+PO-1001,SUP-001,Raw Materials,Steel sheet S235,40,320.00,12800.00,EUR,2025-11-03,2025-12-01,Lena Fischer,manager,Manufacturing,approved,medium
+PO-1002,SUP-002,Hardware,Workstation laptop,25,1450.00,36250.00,EUR,2025-11-04,2025-12-05,Omar Haddad,manager,IT,approved,high
+PO-1003,SUP-005,Services,Freight retention,6,1800.00,10800.00,EUR,2025-11-06,2025-12-10,Marta Kovacs,manager,Logistics,approved,medium
+PO-1004,SUP-008,Tooling,Impact drill set,60,145.00,8700.00,EUR,2025-11-07,2025-12-12,Ravi Patel,manager,Manufacturing,approved,low
+PO-1005,SUP-009,Components,Servo motors,18,640.00,11520.00,EUR,2025-11-10,2025-12-15,Lena Fischer,manager,Manufacturing,approved,medium
+PO-1006,SUP-004,Software,Observability suite (annual),1,18400.00,18400.00,EUR,2025-11-11,2025-12-20,Omar Haddad,manager,IT,approved,medium
+PO-1007,SUP-006,Raw Materials,Aluminium profiles,120,52.00,6240.00,EUR,2025-11-12,2026-01-05,Ravi Patel,manager,Manufacturing,approved,low
+PO-1008,SUP-010,Electrical,Industrial cabling,900,6.80,6120.00,EUR,2025-11-13,2026-01-10,Marta Kovacs,manager,Logistics,approved,low
+PO-1009,SUP-003,Packaging,Corrugated boxes,5000,1.12,5600.00,EUR,2025-11-14,2026-01-12,Ana Duarte,manager,Logistics,approved,low
+PO-1010,SUP-002,Hardware,Docking stations,80,210.00,16800.00,EUR,2025-11-17,2026-01-15,Omar Haddad,manager,IT,approved,medium
+PO-1042,SUP-003,Raw Materials,Steel alloy rods,120,85.00,48600.00,EUR,2025-11-20,2025-12-22,Lena Fischer,manager,Manufacturing,pending_approval,high
+PO-1051,SUP-002,Hardware,Network switches,15,1250.00,18750.00,EUR,2025-11-21,2026-01-08,Omar Haddad,manager,IT,pending_approval,medium
+PO-1051,SUP-002,Hardware,Network switches,15,1280.00,19200.00,EUR,2025-11-21,2026-01-08,Omar Haddad,manager,IT,pending_approval,medium
+PO-1057,SUP-009,Components,Industrial robot arm,1,480000.00,480000.00,EUR,2025-11-24,2026-02-02,Lena Fischer,manager,Manufacturing,pending_approval,high
+PO-1059,SUP-007,Tooling,CNC tooling package,5,14600.00,73000.00,EUR,2025-11-25,2026-01-20,Ravi Patel,manager,Manufacturing,pending_approval,high
+PO-1060,SUP-010,Electrical,Control cabinets,12,1825.00,21900.00,EUR,2025-11-26,,,Ana Duarte,manager,,pending_approval,medium
+PO-1063,SUP-003,Packaging,Conveyor belts,300,12.00,3600.00,EUR,2025-12-01,2025-12-20,Ana Duarte,manager,Logistics,approved,low
+PO-1071,SUP-001,Maintenance,Injection mold refurbishment,1,45000.00,45000.00,EUR,2025-11-28,2026-01-15,Lena Fischer,manager,Manufacturing,pending_approval,high
+PO-1072,SUP-004,Hardware,Edge compute nodes,4,11500.00,46000.00,EUR,2025-11-28,2026-02-01,Omar Haddad,manager,IT,pending_approval,medium
+PO-1074,SUP-005,Services,Warehousing surge capacity,1,96000.00,96000.00,EUR,2025-11-30,2026-02-20,Marta Kovacs,manager,Logistics,pending_approval,high
+PO-1075,SUP-002,Software,License uplift,1,15000.00,15000.00,EUR,2025-12-01,2026-03-01,Omar Haddad,manager,IT,pending_approval,low
+PO-1076,SUP-008,Tooling,Precision fixtures,2,29000.00,58000.00,EUR,2025-12-02,2026-01-30,Ravi Patel,manager,Manufacturing,pending_approval,medium
+PO-1077,SUP-006,Raw Materials,Polymer pellets,2200,15.00,33000.00,EUR,2025-12-03,2026-03-15,Ana Duarte,manager,Logistics,pending_approval,low
+PO-1078,SUP-009,Software,QMS integration connector,1,24000.00,24000.00,EUR,2025-12-04,2026-01-10,Omar Haddad,manager,IT,pending_approval,high

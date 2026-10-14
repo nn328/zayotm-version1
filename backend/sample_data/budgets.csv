@@ -1,0 +1,7 @@
+department,category,annual_budget,committed_amount,available_amount
+Manufacturing,Maintenance,600000,412000,188000
+Manufacturing,Raw Materials,900000,802000,98000
+IT,Hardware,500000,321000,179000
+IT,Software,300000,275000,25000
+Logistics,Services,400000,331000,69000
+Logistics,Freight,350000,210000,140000

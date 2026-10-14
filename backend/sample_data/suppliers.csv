@@ -1,0 +1,11 @@
+supplier_id,name,country,compliance_status,on_watchlist,reliability_score,contract_tier
+SUP-001,Nordstahl GmbH,Germany,active,false,0.93,gold
+SUP-002,TechSource Ltd.,Ireland,active,false,0.88,silver
+SUP-003,Fabrica Iberica,Spain,active,false,0.81,silver
+SUP-004,Cloudline Systems,USA,active,false,0.90,gold
+SUP-005,Portico Logistics,Netherlands,active,false,0.85,silver
+SUP-006,RawNet Materials,Poland,active,false,0.78,bronze
+SUP-007,Vortex Industrial,Turkey,under_review,true,0.62,bronze
+SUP-008,Fenix Tools,Mexico,active,false,0.83,silver
+SUP-009,Aurora Components,Sweden,active,false,0.91,gold
+SUP-010,Meridian Electric,Canada,active,false,0.86,silver

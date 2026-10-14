@@ -1,0 +1,97 @@
+{
+  "iteration": 1,
+  "summary": "All 8 acceptance-matrix criteria exercised: 10 backend suite tests (pre-existing, covering workflow/optimization/approval/trust/eval) + 2 new backend tests for CSV upload + 8 browser checks (one run twice, once on preview URL) all passing.",
+  "passed": 20,
+  "failed": 0,
+  "flaky": 0,
+  "blocked": 0,
+  "test_error": 0,
+  "retest_needed": false,
+  "bugs": [],
+  "action_items": [
+    {
+      "type": "note",
+      "severity": "low",
+      "description": "React 'change in the order of Hooks' console warning observed on DecisionStudio page during role-switch re-renders (decision-studio-role-gated-approval and optimization-classical-vs-quantum checks). Did not break functionality in any exercised flow, but is a real React anti-pattern worth a source review (likely a hook called conditionally/after an early return in DecisionStudio.tsx)."
+    }
+  ],
+  "checks": [
+    {
+      "criterion": "12-step investor demo runs end to end",
+      "name": "demo-12-step-investor-run",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "All demo-step-result-1..12 visible, none text-rose-600 (failed). Step 4 showed 'planted violations detected 7/7'; step 11 contained 'SIMULATED'; step 12 contained 'DETECTED'. Completed well within timeout."
+    },
+    {
+      "criterion": "Data Workspace: sample load, CSV upload, schema/quality profile",
+      "name": "data-workspace-load-and-upload",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "load-sample-dataset-button produced 4 quality-cards + schema-preview table; uploading tscheck_upload.csv via upload-csv-input created a new dataset visible in the list."
+    },
+    {
+      "criterion": "Data Workspace: invalid/empty CSV upload rejected (422 bad_csv)",
+      "name": "test_tscheck_dataset_csv_upload.py (test_upload_empty_headerless_csv_returns_422_bad_csv)",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "POST /api/datasets/upload with empty file -> 200? no -> 422, body.error.code == 'bad_csv'. Also test_upload_valid_csv_creates_dataset: 200, source=upload, file name contains 'tscheck_upload'."
+    },
+    {
+      "criterion": "AI Intelligence Center shows agent traces, evidence, uncertainty, routing, eval harness",
+      "name": "intelligence-center-traces-and-eval",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Selected most recent run: agent-trace-grid rendered 11 agent-trace-* cards, run-llm-info and run-evidence visible; run-eval-button produced eval-results-table with 3 tbody rows (3 strategies)."
+    },
+    {
+      "criterion": "Decision Studio role-gated approval",
+      "name": "decision-studio-role-gated-approval",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "As Analyst: approve/reject/revise buttons disabled, approval-role-note visible; API cross-check POST /cases/{id}/approve as u-analyst-1 -> 403 role_denied. As Approver: approve with reason -> approval-history entry added; second POST approve -> 409. Fresh case: reject flow -> approval-history shows reject entry."
+    },
+    {
+      "criterion": "Optimization: classical vs quantum on same problem",
+      "name": "optimization-classical-vs-quantum",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "run-optimization-button produced classical-result-card (text contains 'ortools') and quantum-result-card (text matches qiskit/aer); Quantum Lab page for same case showed solver-comparison, runtime-chart, convergence-chart, formulation-panel, qubo-formula."
+    },
+    {
+      "criterion": "Trust Center: record, verify, anchor, tamper",
+      "name": "trust-center-record-verify-anchor-tamper",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Created record for an approved case; verify-result contained PASS; anchor-result contained SIMULATED and ledger-tx-table appeared; anchor-record-button became disabled after anchoring (second-anchor rejection); tamper-result contained DETECTED; subsequent verify still PASSed."
+    },
+    {
+      "criterion": "Audit trail and settings",
+      "name": "audit-viewer-and-settings-role-gate",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Audit table filtered by 'dataset.loaded' and 'approval' action text both returned matching audit-action-* rows. Settings: capability-cards visible; as Executive settings-save-button enabled and save succeeded; as Analyst settings-save-button disabled; API cross-check PUT /api/settings as u-analyst-1 -> 403."
+    },
+    {
+      "criterion": "Honesty labeling (localhost)",
+      "name": "honesty-labeling-topbar",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "capability-badge-quantum/llm/ledger visible with 'Simulator'/'Dev Simulation' wording; no page among /, /quantum-lab, /trust-blockchain contained 'quantum advantage' or 'real blockchain'/'mainnet' claims."
+    },
+    {
+      "criterion": "Honesty labeling (public preview ingress)",
+      "name": "honesty-labeling-topbar-preview",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Run against https://zayotm-ledger.preview.emergentagent.com/: capability-badge-quantum contained 'Qiskit Aer Simulator'; capability-badge-ledger contained 'Dev Simulation'."
+    },
+    {
+      "criterion": "Backend core-workflow suite (pre-existing, 10 tests)",
+      "name": "backend/tests/test_zayotm.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "10 passed in 23.88s: health/capabilities, no_actor 401, sample ingestion+quality, workflow + 7/7 planted violations detected, candidates constraint-aware, optimization classical+quantum, recommendation + role gate (403/422/200), decision-record hash/verify/anchor/tamper (64-hex hash, simulated anchor, tamper detected, record still verifies), eval harness (recall>=0.85), settings role gate (403)."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+po_id,promised_date,actual_date,qty_received,status
+PO-1001,2025-12-01,2025-11-28,40,delivered
+PO-1002,2025-12-05,2025-12-03,25,delivered
+PO-1003,2025-12-10,2025-12-11,6,delivered
+PO-1005,2025-12-15,2025-12-14,18,delivered
+PO-1009,2026-01-12,2026-01-10,5000,delivered
+PO-1063,2025-12-12,2026-01-08,300,late

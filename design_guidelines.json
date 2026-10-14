@@ -1,0 +1,274 @@
+{
+  "theme": {
+    "mode": "light",
+    "design_archetype": "Swiss & Precision Enterprise Trust (Clean light studio with high-fidelity semantic telemetry)",
+    "description": "Clean white and slate-50 base architecture tailored for ZaYoTm™ Universal Enterprise Intelligence & Trust Platform. Employs crisp 1px borders, data-dense rectangular modules, high-contrast monospace cryptographic hashes, multi-agent telemetry pipelines, classical vs quantum comparison cards, and role-gated approval workflows with emerald (verified), indigo/violet (AI intelligence), cyan/sky (quantum lab), amber (pending approval/simulation), and rose (tamper/anomaly) semantic accents."
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "border": "#E2E8F0",
+          "link": "#2563EB",
+          "error": "#DC2626",
+          "success": "#16A34A",
+          "warning": "#D97706",
+          "info": "#0284C7"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "border": "#E2E8F0",
+          "border_highlight": "#CBD5E1",
+          "link": "#1D4ED8",
+          "error": "#B91C1C",
+          "success": "#15803D",
+          "warning": "#B45309"
+        }
+      },
+      {
+        "name": "sidebar",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#1E293B",
+          "active_bg": "#1E293B",
+          "active_text": "#38BDF8",
+          "link": "#60A5FA",
+          "badge_bg": "#334155",
+          "badge_text": "#E2E8F0"
+        }
+      },
+      {
+        "name": "topbar",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "border": "#E2E8F0",
+          "badge_quantum_bg": "#E0F2FE",
+          "badge_quantum_text": "#0369A1",
+          "badge_llm_bg": "#EDE9FE",
+          "badge_llm_text": "#6D28D9",
+          "badge_ledger_bg": "#FEF3C7",
+          "badge_ledger_text": "#92400E"
+        }
+      },
+      {
+        "name": "quantum_surface",
+        "kind": "solid",
+        "bg": "#0B132B",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#1C2541",
+          "quantum_glow": "#38BDF8",
+          "classical_glow": "#F59E0B",
+          "success": "#34D399",
+          "error": "#F87171"
+        }
+      },
+      {
+        "name": "trust_ledger_surface",
+        "kind": "solid",
+        "bg": "#F1F5F9",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "border": "#CBD5E1",
+          "hash_text": "#0F172A",
+          "verified_badge": "#16A34A",
+          "tampered_badge": "#DC2626"
+        }
+      },
+      {
+        "name": "badge_success",
+        "kind": "solid",
+        "bg": "#DCFCE7",
+        "on_bg": "#166534",
+        "on_bg_muted": "#15803D"
+      },
+      {
+        "name": "badge_warning",
+        "kind": "solid",
+        "bg": "#FEF3C7",
+        "on_bg": "#92400E",
+        "on_bg_muted": "#B45309"
+      },
+      {
+        "name": "badge_error",
+        "kind": "solid",
+        "bg": "#FEE2E2",
+        "on_bg": "#991B1B",
+        "on_bg_muted": "#B91C1C"
+      },
+      {
+        "name": "badge_quantum",
+        "kind": "solid",
+        "bg": "#E0F2FE",
+        "on_bg": "#075985",
+        "on_bg_muted": "#0369A1"
+      },
+      {
+        "name": "badge_ai",
+        "kind": "solid",
+        "bg": "#EDE9FE",
+        "on_bg": "#5B21B6",
+        "on_bg_muted": "#6D28D9"
+      },
+      {
+        "name": "badge_simulation",
+        "kind": "solid",
+        "bg": "#FEF9C3",
+        "on_bg": "#854D0E",
+        "on_bg_muted": "#A16207"
+      }
+    ],
+    "accent": "#0284C7",
+    "on_accent": "#FFFFFF",
+    "semantic_accents": {
+      "ai_purple": "#7C3AED",
+      "quantum_cyan": "#0284C7",
+      "verified_emerald": "#059669",
+      "approval_amber": "#D97706",
+      "security_rose": "#E11D48",
+      "slate_dark": "#0F172A"
+    }
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans Variable, sans-serif",
+    "font_family_body": "Plus Jakarta Sans Variable, sans-serif",
+    "font_family_mono": "JetBrains Mono Variable, monospace",
+    "css_import": "@import \"@fontsource-variable/plus-jakarta-sans\";\n@import \"@fontsource-variable/jetbrains-mono\";",
+    "scale_px": {
+      "display": 36,
+      "h1": 28,
+      "h2": 22,
+      "h3": 18,
+      "body": 14,
+      "caption": 12
+    },
+    "letter_spacing": {
+      "display": "-0.025em",
+      "h1": "-0.02em",
+      "h2": "-0.015em",
+      "h3": "-0.01em",
+      "body": "0em",
+      "caption": "0.01em",
+      "mono_hash": "0.05em",
+      "overline": "0.15em"
+    }
+  },
+  "entry_surfaces": {
+    "/": "Enterprise intelligence console shell — persistent dark navy telemetry sidebar left, sticky capabilities + role switcher topbar, modular multi-panel dashboard right with 12-step guided investor demo runner and live telemetry cards."
+  },
+  "navigation_and_layout": {
+    "shell_structure": "Left vertical fixed sidebar (w-64, slate-900 background) with ZaYoTm™ brand lockup, navigation items for all 8 functional modules with badge counters, system health status, and live simulated block height. Top bar (h-16, crisp white border-b border-slate-200) with 3 prominent Capability Badges (Quantum: Simulator, LLM: Connected, Ledger: Dev Simulation), active dataset indicator, and interactive Role Switcher dropdown (Executive, Senior Risk Analyst, Chief Compliance Approver).",
+    "screens": [
+      {
+        "id": "overview",
+        "path": "/",
+        "label": "Executive Overview",
+        "description": "High-level cockpit: KPI tiles, 12-Step Investor Demo runner with automated step-through, live decision pipeline status, anomaly distribution, recent verified records, and active ledger block height."
+      },
+      {
+        "id": "data",
+        "path": "/data",
+        "label": "Data Workspace",
+        "description": "CSV ingestion, schema inference, automated data-quality profiling (missingness, distribution, outliers, drift score), and enterprise sample dataset loader (Supply Chain Disruption, Cloud Resource Allocation, Financial Portfolio Risk)."
+      },
+      {
+        "id": "ai-intelligence",
+        "path": "/ai-intelligence",
+        "label": "AI Intelligence Center",
+        "description": "10-agent orchestration matrix with live execution traces, reasoning DAG graph, structured evidence citations, confidence intervals, epistemic vs aleatoric uncertainty gauges, and multi-agent conflict resolution logs."
+      },
+      {
+        "id": "decision-studio",
+        "path": "/decision-studio",
+        "label": "Decision Studio",
+        "description": "Multi-criteria tradeoff engine: objective weight sliders (Cost, Latency, Risk, SLA, ESG), generated alternatives matrix, Pareto frontier visualization, AI rationale inspector, and role-gated multi-signature approval controls."
+      },
+      {
+        "id": "quantum-lab",
+        "path": "/quantum-lab",
+        "label": "Quantum Lab",
+        "description": "Direct side-by-side solver benchmark: Classical Exact / OR-Tools MIP vs QAOA on Qiskit Aer Simulator (QUBO formulation, ansatz depth p, shot count, convergence curves, quantum approximation ratio, energy eigenvalues, runtime in ms)."
+      },
+      {
+        "id": "trust-blockchain",
+        "path": "/trust-blockchain",
+        "label": "Trust & Blockchain Center",
+        "description": "Immutable decision provenance: SHA-256 cryptographic proof generator, simulated Dev Ledger block explorer (Besu EVM contract interface ready), merkle root verification, interactive 1-click Tamper-Test simulator demonstrating instant cryptographic signature invalidation."
+      },
+      {
+        "id": "audit-viewer",
+        "path": "/audit-viewer",
+        "label": "Audit Trail & Compliance",
+        "description": "Chronological enterprise audit log with multidimensional filtering (Actor, Event Type, Severity, Cryptographic Hash), raw JSON telemetry payload inspector, and 1-click regulatory CSV/JSON export."
+      },
+      {
+        "id": "settings",
+        "path": "/settings",
+        "label": "Settings & Capability Matrix",
+        "description": "System architecture inspector, LLM provider selector (Gemini / Anthropic / Local fallback), Qiskit Aer backend tuning, Besu dev ledger node RPC adapter configuration, and system reset / reseed controls."
+      }
+    ]
+  },
+  "component_hierarchy": {
+    "app_shell": "src/components/layout/AppShell.tsx",
+    "sidebar": "src/components/layout/Sidebar.tsx",
+    "topbar": "src/components/layout/Topbar.tsx",
+    "demo_runner": "src/components/demo/InvestorDemoRunner.tsx",
+    "role_switcher": "src/components/common/RoleSwitcher.tsx",
+    "capability_badges": "src/components/common/CapabilityBadges.tsx",
+    "agent_trace_graph": "src/components/ai/AgentExecutionGraph.tsx",
+    "quantum_comparator": "src/components/quantum/QuantumVsClassicalCard.tsx",
+    "tamper_test_card": "src/components/trust/TamperVerificationCard.tsx",
+    "data_profiler": "src/components/data/DataQualityProfile.tsx",
+    "decision_matrix": "src/components/decision/DecisionAlternativeMatrix.tsx"
+  },
+  "visual_enhancers": {
+    "grid_borders": "1px solid #E2E8F0 dividing modular panels, with subtle hover elevation (shadow-sm to shadow-md transition)",
+    "monospace_hashes": "Font-family JetBrains Mono with tracking-wide, highlighted byte prefixes (0x...), copy-to-clipboard buttons, and green/red status beacons",
+    "telemetry_chips": "Clearly labeled state pills: 'SIMULATION [Qiskit Aer]' in cyan, 'LLM [Reasoning + Fallback]' in purple, 'DEV LEDGER [Besu Adapter]' in amber, 'VERIFIED' in emerald",
+    "interactive_flow_diagrams": "Horizontal multi-stage pipeline ribbon (Data -> Ingestion -> 10-Agent AI -> Optimization -> Role Approval -> SHA-256 Hash -> Dev Ledger) with active step indicators for the investor demo",
+    "data_density": "High scanability with compact padding (p-4 to p-6), distinct visual card headers, clear divider lines, and rich metric cards with trend micro-badges."
+  },
+  "motion": {
+    "rules": "Restrained, crisp, and purposeful micro-interactions only. No gratuitous spinning 3D or floating bubbles. Use motion/react for state transitions, modal entrances, and step progression indicator animation.",
+    "hover_states": "translate-y-[-1px] with border-slate-300 and shadow-sm on interactive cards",
+    "transitions": "transition-colors duration-150 ease-in-out, transition-transform duration-150 ease-out"
+  },
+  "accessibility": {
+    "contrast_compliance": "All normal text exceeds WCAG AA 4.5:1 against respective backgrounds. Muted text on white panels is #64748B (4.52:1 ratio) or darker #475569. Dark sidebar text #F8FAFC and muted #94A3B8 on #0F172A (exceeds 7:1).",
+    "keyboard_navigation": "Interactive elements support standard focus rings (focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:outline-none).",
+    "testing_attributes": "Every button, tab, input, role switch, approval trigger, tamper button, and data upload element MUST include data-testid in kebab-case format (e.g. data-testid=\"demo-step-next-button\", data-testid=\"approve-decision-button\", data-testid=\"tamper-test-trigger\")."
+  },
+  "image_urls": {},
+  "instructions_to_main_agent": [
+    "1. Brand Name: Always use 'ZaYoTm™' throughout the application headers, titles, reports, and footer.",
+    "2. Theme & Styling: Apply clean white/slate-50 background with crisp slate-200 borders and rich semantic accent tags (Emerald, Cyan, Violet, Amber, Rose). Update frontend/src/index.css with @import '@fontsource-variable/plus-jakarta-sans'; and @import '@fontsource-variable/jetbrains-mono';",
+    "3. Seed Data & Scenarios: Build 3 comprehensive realistic enterprise datasets (Supply Chain Disruption Response, Multi-Cloud Workload Allocation, Financial Portfolio Risk & Liquidity). Ensure demo runs out-of-the-box with rich mock/live data.",
+    "4. 12-Step Guided Investor Demo: Implement a prominent, interactive floating/header demo drawer or banner on the Executive Overview that walks an investor step-by-step through: 1) Data Load, 2) Schema Profiling, 3) 10-Agent Execution, 4) Anomaly Detection, 5) Uncertainty Analysis, 6) Multi-Criteria Optimization, 7) Classical vs Quantum QAOA Benchmark, 8) Recommendation Generation, 9) Role-Gated Approval (Analyst/Approver), 10) SHA-256 Decision Anchoring, 11) Tamper Simulation & Verification Test, 12) Audit Trail Inspection.",
+    "5. 10 AI Agents Matrix: Accurately display all 10 specialized agents with execution times, status, confidence score, evidence citations, and conflict resolutions: Data Ingestion Agent, Anomaly Scout Agent, Risk Evaluation Agent, Constraint Reasoning Agent, Quantum Formulation Agent, Optimization Arbiter Agent, Uncertainty Calibration Agent, Explainability & Rationale Agent, Governance & Compliance Agent, and Cryptographic Ledger Agent.",
+    "6. Quantum Lab: Include realistic QUBO formulation visualizations, circuit depth parameters (p=1..4), shots (100..2048), Qiskit Aer statevector simulation logs, classical OR-Tools MIP metrics, objective value convergence chart (Recharts), runtime comparison (e.g. Classical 42ms vs Quantum Sim 185ms), and quantum approximation ratio.",
+    "7. Trust & Blockchain Center: Provide realistic SHA-256 hash generation on decision payloads, simulated Besu dev ledger blocks with transaction hashes, block explorer table, and an interactive 'Tamper Decision Data' button that alters a single byte, immediately triggering cryptographic hash mismatch and a red alert banner.",
+    "8. Role-Based Permissions: Demo identity switcher in top bar for 'Executive (View & Override)', 'Risk Analyst (Run Analysis & Draft)', 'Chief Compliance Approver (Final Sign-off)'. Disable or require switching roles when approving high-risk decisions.",
+    "9. Reliability: Ensure the frontend renders resilient fallback states if backend API endpoints take time or are offline, guaranteeing a zero-crash investor experience.",
+    "10. Test IDs: Add data-testid attributes to all interactive and key data display elements."
+  ]
+}
